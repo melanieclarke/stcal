@@ -154,8 +154,8 @@ def flag_saturated_pixels(
         # were not obvious because of group averaging
 
         # XXX JP-3835 only sat
-        # use_sat = True  # XXX Current main uses dnu, not sat
-        use_sat = False  # XXX Current main uses dnu, not sat
+        use_sat = True  # XXX Current main uses dnu, not sat
+        # use_sat = False  # XXX Current main uses dnu, not sat
 
         for group in range(ngroups - 2, -1, -1):
             plane = data[ints, group, :, :]
